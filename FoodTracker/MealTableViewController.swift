@@ -12,6 +12,7 @@ import os.log
 class MealTableViewController: UITableViewController {
     
     //MARK: Properties
+    
     var meals = [Meal]()
     
     override func viewDidLoad() {
@@ -89,6 +90,7 @@ class MealTableViewController: UITableViewController {
     }
     
     // MARK: Navigation
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
@@ -117,6 +119,7 @@ class MealTableViewController: UITableViewController {
     }
     
     //MARK: Actions
+    
     @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? MealViewController, let meal = sourceViewController.meal {
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
@@ -136,6 +139,7 @@ class MealTableViewController: UITableViewController {
     }
     
     //MARK: Private Methods
+    
     private func loadSampleMeals() {
         let photo1 = UIImage(named: "meal1")
         let photo2 = UIImage(named: "meal2")

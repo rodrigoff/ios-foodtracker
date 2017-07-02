@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="34W-fD-deO" id="vDj-U0-s4x">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X1R-6Z-3mQ">
@@ -40,13 +40,13 @@
                                                     <rect key="frame" x="98" y="0.0" width="252" height="90"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uad-Ni-vA4">
-                                                            <rect key="frame" x="0.0" y="0.0" width="252" height="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="252" height="38"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zzq-iy-AcQ" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="28" width="252" height="62"/>
+                                                            <rect key="frame" x="0.0" y="46" width="252" height="44"/>
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>

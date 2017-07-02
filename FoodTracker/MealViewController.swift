@@ -13,6 +13,7 @@ class MealViewController: UIViewController, UITextFieldDelegate,
     UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // MARK: Properties
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
@@ -43,6 +44,7 @@ class MealViewController: UIViewController, UITextFieldDelegate,
     }
 
     //MARK: UITextFieldDelegate
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
@@ -60,6 +62,7 @@ class MealViewController: UIViewController, UITextFieldDelegate,
     }
     
     //MARK: UIImagePickerControllerDelegate
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         // Dismiss the picker if the user canceled.
         dismiss(animated: true, completion: nil)
@@ -81,6 +84,7 @@ class MealViewController: UIViewController, UITextFieldDelegate,
     }
     
     //MARK: Navigation
+    
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         // Depending on style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways.
         let isPresentingInAddMealMode = presentingViewController is UINavigationController
@@ -115,6 +119,7 @@ class MealViewController: UIViewController, UITextFieldDelegate,
     }
     
     //MARK: Actions
+    
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         // Hide the keyboard.
         nameTextField.resignFirstResponder()
@@ -132,6 +137,7 @@ class MealViewController: UIViewController, UITextFieldDelegate,
     }
     
     //MARK: Private Methods
+    
     private func updateSaveButtonState() {
         // Disable the Save button if the text field is empty.
         let text = nameTextField.text ?? ""
